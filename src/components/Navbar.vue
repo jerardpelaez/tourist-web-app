@@ -4,6 +4,7 @@
       <v-toolbar-title class="display-2 font-weight-light red--text text--lighten-3">
         <p class="nav-title ma-5">Japan Travel Guide</p>
       </v-toolbar-title>
+      <v-spacer></v-spacer>
     </v-app-bar>
   </div>
 </template>

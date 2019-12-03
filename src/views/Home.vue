@@ -21,11 +21,11 @@
         <v-card>
           <v-img :src="city.img" height="300px" dark></v-img>
           <h1 class="text-center mt-5 display-2">
-            <span class="card-head red--text text--lighten-2">{{city.name}}</span>
+            <span class="card-head red--text text--lighten-3">{{city.name}}</span>
           </h1>
 
           <v-list class="ma-10">
-            <h3 class="ml-7 font-weight-bold headline">Weather Information</h3>
+            <h3 class="ml-7 headline helpers font-weight-medium">Weather Information</h3>
             <v-divider></v-divider>
             <v-list-item>
               <v-img
@@ -62,7 +62,7 @@
                 <v-list-item-subtitle v-if="city.weather.description == 'snow'" class="title">Snowy</v-list-item-subtitle>
               </v-list-item-content>
             </v-list-item>
-            <h3 class="ml-7 font-weight-bold headline">Nearby Places to Visit</h3>
+            <h3 class="ml-7 headline helpers font-weight-medium">Nearby Places to Visit</h3>
             <v-divider></v-divider>
             <v-list-item
               v-for="(item, index) in city.details"
@@ -70,16 +70,12 @@
               class="font-weight-bold"
             >
               <v-list-item-content>
-                <v-list-item-title>{{ item.name }}</v-list-item-title>
+                <v-list-item-title class="headline mb-2 font-weight-light">{{ item.name }}</v-list-item-title>
                 <v-list-item-subtitle>{{ item.location.address }}</v-list-item-subtitle>
               </v-list-item-content>
             </v-list-item>
-
-            <v-divider></v-divider>
           </v-list>
-          <v-card-action>
-            <v-btn text @click="dialog = false">close</v-btn>
-          </v-card-action>
+          <v-divider></v-divider>
         </v-card>
       </v-dialog>
     </v-row>
@@ -173,6 +169,9 @@ export default {
   margin-top: 60px;
   font-family: "Gupter", serif;
   font-size: 60px;
+}
+.helpers {
+  font-family: "Dosis", sans-serif;
 }
 .card-head {
   font-family: "Permanent Marker", cursive;
