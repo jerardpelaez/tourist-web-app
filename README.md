@@ -9,16 +9,4 @@ npm install
 ```
 npm run serve
 ```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+I tried to make it very simple and focused on the the vuetify design components so that the designs will be easily maintained and arranged in a good manner. I mostly used the css components to implement the fonts that I imported from Google. I made it very responsive and mobile-friendly. 
